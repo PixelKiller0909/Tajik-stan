@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations - Discover Tajikistan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#2563eb", secondary: "#10b981" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+          background-image: url('https://readdy.ai/api/search-image?query=Stunning%2520panoramic%2520landscape%2520of%2520Tajikistan%2520with%2520diverse%2520destinations%2520including%2520snow-capped%2520mountains%252C%2520crystal%2520clear%2520lakes%252C%2520historic%2520cities%252C%2520and%2520ancient%2520ruins.%2520Beautiful%2520natural%2520scenery%2520with%2520dramatic%2520lighting%2520and%2520vibrant%2520colors.%2520The%2520image%2520has%2520a%2520gradient%2520from%2520darker%2520left%2520side%2520to%2520brighter%2520right%2520side%252C%2520perfect%2520for%2520text%2520overlay%2520on%2520the%2520left.&width=1920&height=600&seq=21&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+      .search-input:focus {
+          outline: none;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .custom-checkbox {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          user-select: none;
+      }
+      .custom-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+      }
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #f3f4f6;
+          border: 1px solid #d1d5db;
+          border-radius: 4px;
+      }
+      .custom-checkbox:hover input ~ .checkmark {
+          background-color: #e5e7eb;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+          background-color: #2563eb;
+          border-color: #2563eb;
+      }
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+          display: block;
+      }
+      .custom-checkbox .checkmark:after {
+          left: 7px;
+          top: 3px;
+          width: 6px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+      .custom-range {
+          width: 100%;
+          height: 6px;
+          border-radius: 5px;
+          background: #e5e7eb;
+          outline: none;
+      }
+      .custom-range::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #2563eb;
+          cursor: pointer;
+      }
+      .custom-range::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #2563eb;
+          cursor: pointer;
+          border: none;
+      }
+      .category-filter.active {
+          background-color: #2563eb;
+          color: white;
+      }
+      .destination-card {
+          transition: all 0.3s ease;
+      }
+      .destination-card:hover {
+          transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-['Pacifico'] text-primary mr-10"
+            >logo</a
+          >
+          <nav class="hidden md:flex space-x-6">
+            <a
+              href="file:///C:/Users/abdul/OneDrive/Desktop/tajikistan_website/index.html"
+              data-readdy="true"
+              class="font-medium text-gray-600 hover:text-primary transition"
+              >Home</a
+            >
+            <a
+              href="file:///C:/Users/abdul/OneDrive/Desktop/tajikistan_website/destination.html"
+              class="font-medium text-gray-900 hover:text-primary transition"
+              >Destinations</a
+            >
+            <a
+              href="file:///C:/Users/abdul/OneDrive/Desktop/tajikistan_website/travel_guide.html"
+              class="font-medium text-gray-600 hover:text-primary transition"
+              >Travel Guide</a
+            >
+            <a
+              href="#"
+              class="font-medium text-gray-600 hover:text-primary transition"
+              >Plan Your Trip</a
+            >
+            <a
+              href="#"
+              class="font-medium text-gray-600 hover:text-primary transition"
+              >About Tajikistan</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="relative hidden md:block">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="search-input pl-10 pr-4 py-2 bg-gray-100 rounded-full text-sm w-44 border-none"
+            />
+            <div
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-primary"
+            >
+              <span>EN</span>
+              <div class="w-4 h-4 flex items-center justify-center">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+            </button>
+            <div
+              class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded hidden group-hover:block"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >English</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Russian</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Tajik</a
+              >
+            </div>
+          </div>
+          <button
+            class="bg-primary text-white px-4 py-2 rounded-button font-medium text-sm shadow-sm hover:bg-primary/90 transition whitespace-nowrap"
+          >
+            Contact Helper
+          </button>
+          <button
+            class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section mt-16 relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"
+      ></div>
+      <div class="container mx-auto px-4 py-20 relative z-10">
+        <div class="max-w-2xl">
+          <div class="flex items-center text-white/80 text-sm mb-4">
+            <a
+              href="https://readdy.ai/home/01311e90-34a0-4045-8829-11511108a7a5/82f723fc-4bd2-484a-831a-2f0039e5c9bc"
+              data-readdy="true"
+              class="hover:text-white"
+              >Home</a
+            >
+            <div class="mx-2">/</div>
+            <span class="text-white">Destinations</span>
+          </div>
+          <h1 class="text-5xl font-bold text-white mb-6">
+            Explore Tajikistan's Destinations
+          </h1>
+          <p class="text-xl text-white/90 mb-8">
+            Discover breathtaking mountains, pristine lakes, historic cities,
+            and cultural landmarks across this beautiful country.
+          </p>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Destination Type</label
+                >
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none px-4 py-2 pr-8 border border-gray-300 rounded text-gray-800 bg-gray-50"
+                  >
+                    <option value="">All Destinations</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="lakes">Lakes</option>
+                    <option value="cities">Cities</option>
+                    <option value="historical">Historical Sites</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >When to Visit</label
+                >
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none px-4 py-2 pr-8 border border-gray-300 rounded text-gray-800 bg-gray-50"
+                  >
+                    <option value="">Any Time</option>
+                    <option value="spring">Spring (Mar-May)</option>
+                    <option value="summer">Summer (Jun-Aug)</option>
+                    <option value="autumn">Autumn (Sep-Nov)</option>
+                    <option value="winter">Winter (Dec-Feb)</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Difficulty Level</label
+                >
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none px-4 py-2 pr-8 border border-gray-300 rounded text-gray-800 bg-gray-50"
+                  >
+                    <option value="">Any Level</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="challenging">Challenging</option>
+                    <option value="extreme">Extreme</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="flex-1">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="Search destinations..."
+                    class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded text-gray-800 bg-gray-50"
+                  />
+                  <div
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500"
+                  >
+                    <i class="ri-search-line"></i>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap"
+              >
+                Find Destinations
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Sidebar Filters -->
+          <div class="w-full lg:w-1/4">
+            <div class="bg-white rounded-lg shadow-md p-6 sticky top-24">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="text-lg font-bold text-gray-900">Filters</h3>
+                <button
+                  class="text-sm text-primary font-medium hover:underline"
+                >
+                  Clear All
+                </button>
+              </div>
+
+              <!-- Category Filter -->
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-900 mb-3">Categories</h4>
+                <div class="flex flex-wrap gap-2">
+                  <button
+                    class="category-filter active px-3 py-1.5 text-sm font-medium bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                  >
+                    All
+                  </button>
+                  <button
+                    class="category-filter px-3 py-1.5 text-sm font-medium bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                  >
+                    Mountains
+                  </button>
+                  <button
+                    class="category-filter px-3 py-1.5 text-sm font-medium bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                  >
+                    Lakes
+                  </button>
+                  <button
+                    class="category-filter px-3 py-1.5 text-sm font-medium bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                  >
+                    Cities
+                  </button>
+                  <button
+                    class="category-filter px-3 py-1.5 text-sm font-medium bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                  >
+                    Historical
+                  </button>
+                </div>
+              </div>
+
+              <!-- Price Range -->
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-900 mb-3">Price Range</h4>
+                <div class="mb-4">
+                  <input
+                    type="range"
+                    min="0"
+                    max="2000"
+                    value="1000"
+                    class="custom-range"
+                    id="priceRange"
+                  />
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-gray-600">$0</span>
+                  <span class="text-sm font-medium text-gray-900"
+                    >Up to $<span id="priceValue">1000</span></span
+                  >
+                  <span class="text-sm text-gray-600">$2000+</span>
+                </div>
+              </div>
+
+              <!-- Rating Filter -->
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-900 mb-3">Rating</h4>
+                <div class="space-y-2">
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <div class="flex text-amber-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 ml-1">5.0</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <div class="flex text-amber-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 ml-1">4.0 & up</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <div class="flex text-amber-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 ml-1">3.0 & up</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <div class="flex text-amber-400 ml-2">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 ml-1">2.0 & up</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Amenities -->
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-900 mb-3">Amenities</h4>
+                <div class="space-y-2">
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <span class="text-sm text-gray-700">Guided Tours</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    <span class="text-sm text-gray-700">Accommodation</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <span class="text-sm text-gray-700">Transportation</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <span class="text-sm text-gray-700">Food Included</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <span class="text-sm text-gray-700">Equipment Rental</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Best Time to Visit -->
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-900 mb-3">
+                  Best Time to Visit
+                </h4>
+                <div class="grid grid-cols-2 gap-2">
+                  <button
+                    class="px-3 py-1.5 text-sm font-medium bg-gray-100 rounded hover:bg-gray-200 transition"
+                  >
+                    Spring
+                  </button>
+                  <button
+                    class="px-3 py-1.5 text-sm font-medium bg-gray-100 rounded hover:bg-gray-200 transition"
+                  >
+                    Summer
+                  </button>
+                  <button
+                    class="px-3 py-1.5 text-sm font-medium bg-gray-100 rounded hover:bg-gray-200 transition"
+                  >
+                    Autumn
+                  </button>
+                  <button
+                    class="px-3 py-1.5 text-sm font-medium bg-gray-100 rounded hover:bg-gray-200 transition"
+                  >
+                    Winter
+                  </button>
+                </div>
+              </div>
+
+              <!-- Apply Filters Button -->
+              <button
+                class="w-full bg-primary text-white py-2 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap"
+              >
+                Apply Filters
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Content Grid -->
+          <div class="w-full lg:w-3/4">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-bold text-gray-900">
+                42 Destinations Found
+              </h2>
+              <div class="flex items-center space-x-4">
+                <div class="relative">
+                  <select
+                    class="appearance-none px-3 py-2 pr-8 text-sm border border-gray-300 rounded text-gray-800 bg-white"
+                  >
+                    <option>Sort by: Popular</option>
+                    <option>Sort by: Rating</option>
+                    <option>Sort by: Price (Low to High)</option>
+                    <option>Sort by: Price (High to Low)</option>
+                  </select>
+                  <div
+                    class="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center text-gray-500 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-white rounded-lg border border-gray-300 p-1"
+                >
+                  <button
+                    class="w-8 h-8 flex items-center justify-center text-primary bg-gray-100 rounded"
+                  >
+                    <i class="ri-layout-grid-line"></i>
+                  </button>
+                  <button
+                    class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
+                  >
+                    <i class="ri-list-check"></i>
+                  </button>
+                  <button
+                    class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Destination Card 1 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Breathtaking%2520view%2520of%2520Pamir%2520Mountains%2520in%2520Tajikistan%2520with%2520snow-capped%2520peaks%252C%2520dramatic%2520rocky%2520terrain%252C%2520and%2520clear%2520blue%2520sky.%2520Majestic%2520mountain%2520range%2520with%2520deep%2520valleys%2520and%2520glaciers.%2520High-altitude%2520landscape%2520with%2520pristine%2520wilderness.%2520Rugged%2520mountain%2520scenery%2520with%2520natural%2520beauty%2520untouched%2520by%2520civilization.%2520Perfect%2520travel%2520destination%2520for%2520adventurers.&width=600&height=400&seq=22&orientation=landscape"
+                    alt="Pamir Mountains"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-primary/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Mountains
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.9 (215)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Pamir Mountains
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Known as the "Roof of the World," the Pamir Mountains offer
+                    breathtaking landscapes, alpine lakes, and some of the
+                    highest peaks in Central Asia.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Trekking</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Nature</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Adventure</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$850</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 2 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Beautiful%2520Iskanderkul%2520Lake%2520in%2520Tajikistan%2520with%2520crystal%2520clear%2520turquoise%2520water%2520surrounded%2520by%2520dramatic%2520mountains.%2520Serene%2520alpine%2520lake%2520reflecting%2520mountain%2520peaks.%2520Lush%2520vegetation%2520along%2520shoreline%2520with%2520some%2520pine%2520trees.%2520Pristine%2520natural%2520landscape%2520with%2520vibrant%2520colors.%2520Sunny%2520day%2520with%2520blue%2520sky%2520and%2520few%2520clouds.%2520Perfect%2520travel%2520destination.&width=600&height=400&seq=23&orientation=landscape"
+                    alt="Iskanderkul Lake"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-blue-500/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Lakes
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.8 (189)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Iskanderkul Lake
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    This stunning turquoise alpine lake is one of Tajikistan's
+                    most beautiful natural landmarks, surrounded by snow-capped
+                    mountains.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Swimming</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Camping</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Photography</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$450</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 3 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Ancient%2520ruins%2520of%2520Hissor%2520Fortress%2520in%2520Tajikistan%2520with%2520historic%2520stone%2520walls%2520and%2520arched%2520entrance%2520gate.%2520Traditional%2520Central%2520Asian%2520architecture%2520with%2520clay%2520and%2520stone%2520construction.%2520Historic%2520cultural%2520landmark%2520against%2520blue%2520sky%2520background.%2520Archaeological%2520site%2520with%2520mountains%2520visible%2520in%2520distance.%2520Well-preserved%2520medieval%2520fortress%2520with%2520distinctive%2520architectural%2520elements.&width=600&height=400&seq=24&orientation=landscape"
+                    alt="Hissor Fortress"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Historical
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.6 (142)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Hissor Fortress
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Dating back to the 16th century, this historic fortress
+                    offers a glimpse into Tajikistan's rich cultural heritage
+                    and architectural traditions.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Cultural</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Museum</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Architecture</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$120</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 4 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Beautiful%2520panoramic%2520view%2520of%2520Dushanbe%2520city%252C%2520Tajikistan.%2520Modern%2520urban%2520landscape%2520with%2520mountains%2520in%2520background.%2520Clean%2520streets%2520with%2520lush%2520green%2520parks%2520and%2520distinctive%2520architecture.%2520Bright%2520sunny%2520day%2520with%2520blue%2520sky.%2520City%2520center%2520with%2520government%2520buildings%2520and%2520cultural%2520landmarks.%2520Capital%2520city%2520with%2520mix%2520of%2520traditional%2520and%2520modern%2520elements.&width=600&height=400&seq=25&orientation=landscape"
+                    alt="Dushanbe"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-purple-600/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Cities
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.5 (176)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Dushanbe</h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    The capital city of Tajikistan features wide tree-lined
+                    avenues, vibrant bazaars, museums, and a blend of Soviet and
+                    modern architecture.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >City Tour</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Shopping</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Dining</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$180</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 5 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Beautiful%2520Fan%2520Mountains%2520in%2520Tajikistan%2520with%2520seven%2520lakes%252C%2520turquoise%2520water%2520surrounded%2520by%2520dramatic%2520peaks.%2520Alpine%2520landscape%2520with%2520clear%2520mountain%2520lakes%2520at%2520different%2520elevations.%2520Hiking%2520trail%2520visible%2520along%2520shoreline.%2520Pristine%2520wilderness%2520with%2520some%2520greenery.%2520Perfect%2520destination%2520for%2520trekking%2520and%2520nature%2520photography.%2520Stunning%2520natural%2520scenery%2520with%2520vibrant%2520colors.&width=600&height=400&seq=26&orientation=landscape"
+                    alt="Seven Lakes"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-blue-500/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Lakes
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.9 (203)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Seven Lakes (Haft Kul)
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    A chain of seven stunning alpine lakes in the Fan Mountains,
+                    each with its own unique color and character, connected by
+                    hiking trails.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Hiking</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Nature</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Photography</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$550</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 6 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Scenic%2520view%2520of%2520Wakhan%2520Corridor%2520in%2520Tajikistan%2520with%2520dramatic%2520mountain%2520landscape%2520and%2520winding%2520river.%2520Remote%2520valley%2520with%2520traditional%2520villages%2520and%2520agricultural%2520terraces.%2520Historic%2520Silk%2520Road%2520route%2520with%2520stunning%2520natural%2520beauty.%2520Rugged%2520terrain%2520with%2520snow-capped%2520peaks%2520in%2520background.%2520Border%2520region%2520with%2520unique%2520cultural%2520heritage%2520and%2520pristine%2520wilderness.&width=600&height=400&seq=27&orientation=landscape"
+                    alt="Wakhan Corridor"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-primary/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Mountains
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.7 (128)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Wakhan Corridor
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    A historic mountain passage that once formed part of the
+                    Silk Road, offering stunning landscapes and glimpses into
+                    traditional Pamiri culture.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Cultural</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Historical</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Trekking</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$980</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 7 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Ancient%2520ruins%2520of%2520Sarazm%2520archaeological%2520site%2520in%2520Tajikistan.%2520UNESCO%2520World%2520Heritage%2520site%2520with%2520excavated%2520stone%2520foundations%2520and%2520structures.%2520Historic%2520settlement%2520dating%2520back%2520to%25204th%2520millennium%2520BC.%2520Archaeological%2520excavation%2520with%2520preserved%2520ancient%2520city%2520layout.%2520Important%2520cultural%2520landmark%2520showing%2520early%2520urban%2520civilization%2520in%2520Central%2520Asia.%2520Desert%2520landscape%2520with%2520mountains%2520in%2520background.&width=600&height=400&seq=28&orientation=landscape"
+                    alt="Ancient Sarazm"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Historical
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.4 (98)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Ancient Sarazm
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    UNESCO World Heritage site dating back to the 4th millennium
+                    BC, one of the oldest settlements in Central Asia with
+                    remarkable archaeological remains.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >UNESCO</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Archaeology</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >History</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$150</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 8 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Scenic%2520view%2520of%2520Khujand%2520city%2520in%2520Tajikistan%2520with%2520Syr%2520Darya%2520river%2520and%2520mountains%2520in%2520background.%2520Second%2520largest%2520city%2520in%2520Tajikistan%2520with%2520mix%2520of%2520modern%2520and%2520traditional%2520architecture.%2520Urban%2520landscape%2520with%2520parks%2520and%2520historical%2520buildings.%2520Ancient%2520Silk%2520Road%2520city%2520with%2520rich%2520cultural%2520heritage.%2520Vibrant%2520city%2520life%2520with%2520markets%2520and%2520public%2520spaces.&width=600&height=400&seq=29&orientation=landscape"
+                    alt="Khujand"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-purple-600/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Cities
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.3 (112)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Khujand</h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Tajikistan's second-largest city and one of Central Asia's
+                    oldest, featuring the Panjshanbe Bazaar, ancient citadel,
+                    and beautiful mosques.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >City Tour</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Markets</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >History</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$160</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination Card 9 -->
+              <div
+                class="destination-card bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <div class="relative">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Beautiful%2520Karakul%2520Lake%2520in%2520Tajikistan%2520with%2520crystal%2520clear%2520water%2520surrounded%2520by%2520barren%2520mountains.%2520High-altitude%2520lake%2520at%2520over%25203900m%2520elevation%2520on%2520Pamir%2520Highway.%2520Dramatic%2520landscape%2520with%2520snow-capped%2520peaks%2520reflected%2520in%2520water.%2520Remote%2520wilderness%2520with%2520pristine%2520natural%2520beauty.%2520Stunning%2520alpine%2520scenery%2520with%2520unique%2520geological%2520features.%2520Meteorite%2520crater%2520lake%2520with%2520intense%2520blue%2520color.&width=600&height=400&seq=30&orientation=landscape"
+                    alt="Karakul Lake"
+                    class="w-full h-56 object-cover object-top"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-blue-500/90 text-white text-xs font-medium px-2 py-1 rounded"
+                  >
+                    Lakes
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-white/90 text-gray-800 text-xs font-medium px-2 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.8 (156)
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Karakul Lake
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    A high-altitude lake formed by a meteorite impact, located
+                    at over 3,900 meters on the Pamir Highway with spectacular
+                    mountain views.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >Nature</span
+                    >
+                    <span
+                      class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full"
+                      >Photography</span
+                    >
+                    <span
+                      class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+                      >Adventure</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-primary font-bold">$780</span>
+                      <span class="text-gray-500 text-sm"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-10">
+              <nav class="flex items-center space-x-1">
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-500 hover:bg-gray-50"
+                >
+                  <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white"
+                >
+                  1
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                >
+                  2
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                >
+                  3
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                >
+                  4
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                >
+                  5
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-500 hover:bg-gray-50"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Featured Destinations
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover our handpicked selection of must-visit places in Tajikistan
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="col-span-1 lg:col-span-2">
+            <div class="bg-gray-50 rounded-lg overflow-hidden h-full">
+              <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+                <div class="p-8 flex flex-col justify-center">
+                  <div
+                    class="inline-block bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full mb-4"
+                  >
+                    Featured Tour
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    Pamir Highway Adventure
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    Experience the legendary Pamir Highway, one of the world's
+                    most spectacular road trips. This 10-day adventure takes you
+                    through breathtaking mountain landscapes, remote villages,
+                    and ancient Silk Road sites.
+                  </p>
+                  <div class="space-y-3 mb-6">
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </div>
+                      <span class="text-gray-700 ml-2"
+                        >Professional English-speaking guide</span
+                      >
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </div>
+                      <span class="text-gray-700 ml-2"
+                        >4x4 vehicle with experienced driver</span
+                      >
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </div>
+                      <span class="text-gray-700 ml-2"
+                        >Accommodation in hotels and homestays</span
+                      >
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-primary"
+                      >
+                        <i class="ri-check-line"></i>
+                      </div>
+                      <span class="text-gray-700 ml-2"
+                        >All meals and permits included</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-3xl font-bold text-primary"
+                        >$1,250</span
+                      >
+                      <span class="text-gray-500"> / person</span>
+                    </div>
+                    <button
+                      class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+                <div class="relative h-64 md:h-full">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=Scenic%2520view%2520of%2520Pamir%2520Highway%2520in%2520Tajikistan%2520with%2520winding%2520mountain%2520road%2520through%2520dramatic%2520landscape.%2520High-altitude%2520route%2520with%2520snow-capped%2520peaks%2520in%2520background.%2520Empty%2520road%2520cutting%2520through%2520rugged%2520terrain.%2520Adventure%2520travel%2520destination%2520with%2520breathtaking%2520views.%2520Clear%2520blue%2520sky%2520over%2520mountain%2520pass.%2520Epic%2520road%2520trip%2520route%2520through%2520Central%2520Asia.&width=600&height=600&seq=31&orientation=squarish"
+                    alt="Pamir Highway"
+                    class="w-full h-full object-cover object-top"
+                  />
+                  <div
+                    class="absolute bottom-4 left-4 bg-white/90 text-gray-800 text-sm font-medium px-3 py-1 rounded flex items-center"
+                  >
+                    <i class="ri-star-fill text-amber-400 mr-1"></i>
+                    4.9 (215 reviews)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <div
+              class="bg-gray-50 rounded-lg overflow-hidden h-full flex flex-col"
+            >
+              <div class="relative h-48">
+                <img
+                  src="https://readdy.ai/api/search-image?query=Beautiful%2520Fan%2520Mountains%2520in%2520Tajikistan%2520with%2520seven%2520lakes%252C%2520turquoise%2520water%2520surrounded%2520by%2520dramatic%2520peaks.%2520Alpine%2520landscape%2520with%2520clear%2520mountain%2520lakes%2520at%2520different%2520elevations.%2520Hiking%2520trail%2520visible%2520along%2520shoreline.%2520Pristine%2520wilderness%2520with%2520some%2520greenery.%2520Perfect%2520destination%2520for%2520trekking%2520and%2520nature%2520photography.%2520Stunning%2520natural%2520scenery%2520with%2520vibrant%2520colors.&width=600&height=300&seq=32&orientation=landscape"
+                  alt="Seven Lakes"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-blue-500/90 text-white text-xs font-medium px-2 py-1 rounded"
+                >
+                  Trending
+                </div>
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Seven Lakes Trekking
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  A 7-day guided trek through the stunning Fan Mountains,
+                  exploring the seven lakes of different colors.
+                </p>
+                <div class="flex items-center text-amber-400 mb-4">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="text-gray-600 ml-2">4.9 (203)</span>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                  <div>
+                    <span class="text-xl font-bold text-primary">$850</span>
+                    <span class="text-gray-500"> / person</span>
+                  </div>
+                  <button
+                    class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Travel Tips -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Travel Tips for Tajikistan
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Essential information to help you plan your perfect Tajikistan
+            adventure
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full mb-4"
+            >
+              <i class="ri-calendar-line ri-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Best Time to Visit
+            </h3>
+            <p class="text-gray-600">
+              The ideal time to visit most of Tajikistan is from May to October
+              when the weather is pleasant. Mountain areas are best visited in
+              summer (June-August) when passes are clear of snow.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-100 text-green-600 rounded-full mb-4"
+            >
+              <i class="ri-passport-line ri-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Visa Requirements
+            </h3>
+            <p class="text-gray-600">
+              Most visitors need a visa to enter Tajikistan. E-visas are
+              available online. For visiting the Pamir region (GBAO), you'll
+              need a special permit that can be requested with your visa
+              application.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-amber-100 text-amber-600 rounded-full mb-4"
+            >
+              <i class="ri-car-line ri-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Transportation</h3>
+            <p class="text-gray-600">
+              For mountain regions, 4WD vehicles are recommended. Shared taxis
+              and minibuses connect major cities. Domestic flights operate
+              between Dushanbe and major regional centers.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 rounded-full mb-4"
+            >
+              <i class="ri-hand-heart-line ri-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Local Customs</h3>
+            <p class="text-gray-600">
+              Tajikistan is predominantly Muslim. Dress modestly, especially in
+              rural areas. Remove shoes when entering homes, and it's polite to
+              accept tea when offered by locals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Traveler Reviews -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            What Travelers Say
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Authentic experiences from travelers who have explored Tajikistan
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <div class="flex text-amber-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "The Pamir Highway was the most incredible road trip I've ever
+              taken. The landscapes are otherworldly, and staying with local
+              families in homestays was the highlight of our journey. Our guide
+              was knowledgeable and made us feel safe throughout."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=Professional%2520headshot%2520of%2520female%2520traveler%2520with%2520blonde%2520hair%2520and%2520friendly%2520smile.%2520Clean%2520simple%2520background.%2520Natural%2520lighting%2520with%2520soft%2520shadows.%2520Professional%2520appearance%2520with%2520casual%2520style.%2520Modern%2520portrait%2520with%2520good%2520composition.&width=100&height=100&seq=33&orientation=squarish"
+                  alt="Reviewer"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Rebecca Anderson</h4>
+                <p class="text-sm text-gray-500">Pamir Highway Adventure</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <div class="flex text-amber-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "The Seven Lakes trek exceeded all my expectations. Each lake has
+              its own unique color and setting. Our guide was excellent, and the
+              hospitality we received in the small villages along the way was
+              heartwarming. Definitely a highlight of my Central Asia trip."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=Professional%2520headshot%2520of%2520male%2520traveler%2520with%2520short%2520dark%2520hair%2520and%2520glasses.%2520Clean%2520simple%2520background.%2520Natural%2520lighting%2520with%2520soft%2520shadows.%2520Professional%2520appearance%2520with%2520casual%2520style.%2520Modern%2520portrait%2520with%2520good%2520composition.&width=100&height=100&seq=34&orientation=squarish"
+                  alt="Reviewer"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Daniel Kovalski</h4>
+                <p class="text-sm text-gray-500">Seven Lakes Trekking</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <div class="flex text-amber-400 mb-4">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "Exploring Dushanbe and the historical sites around it was
+              fascinating. The Hissor Fortress is a must-visit, and the National
+              Museum offers great insights into Tajik history. The food was
+              delicious, and the people were incredibly welcoming everywhere we
+              went."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=Professional%2520headshot%2520of%2520female%2520traveler%2520with%2520brown%2520hair%2520and%2520natural%2520smile.%2520Clean%2520simple%2520background.%2520Natural%2520lighting%2520with%2520soft%2520shadows.%2520Professional%2520appearance%2520with%2520casual%2520style.%2520Modern%2520portrait%2520with%2520good%2520composition.&width=100&height=100&seq=35&orientation=squarish"
+                  alt="Reviewer"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Sophia Martinez</h4>
+                <p class="text-sm text-gray-500">Cultural Heritage Tour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-primary">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Stay Updated on Tajikistan Destinations
+          </h2>
+          <p class="text-xl text-white/80 mb-8">
+            Subscribe to receive travel tips, new destination alerts, and
+            exclusive offers
+          </p>
+          <div class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="flex-1 px-4 py-3 rounded-button border-none"
+            />
+            <button
+              class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-gray-100 transition whitespace-nowrap"
+            >
+              Subscribe Now
+            </button>
+          </div>
+          <p class="text-white/70 text-sm mt-4">
+            We respect your privacy. Unsubscribe at any time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a
+              href="#"
+              class="text-2xl font-['Pacifico'] text-white mb-4 inline-block"
+              >logo</a
+            >
+            <p class="text-gray-400 mb-6">
+              Your comprehensive guide to exploring the beauty and culture of
+              Tajikistan.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition"
+              >
+                <i class="ri-facebook-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition"
+              >
+                <i class="ri-twitter-x-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition"
+              >
+                <i class="ri-instagram-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition"
+              >
+                <i class="ri-youtube-fill text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="https://readdy.ai/home/01311e90-34a0-4045-8829-11511108a7a5/82f723fc-4bd2-484a-831a-2f0039e5c9bc"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Travel Guide</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Plan Your Trip</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >About Tajikistan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Destination Types</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Mountains & Trekking</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Lakes & Rivers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Historical Sites</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Cities & Culture</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Adventure Tours</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Silk Road Routes</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to receive travel tips, special offers, and updates
+              about Tajikistan.
+            </p>
+            <div class="flex mb-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="px-4 py-2 bg-gray-800 text-white rounded-l w-full border-none"
+              />
+              <button
+                class="bg-primary text-white px-4 py-2 rounded-r font-medium hover:bg-primary/90 transition whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-visa-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-mastercard-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-paypal-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-apple-fill text-gray-400 ri-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+              <h4 class="text-lg font-bold mb-2">Emergency Contacts</h4>
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-phone-fill"></i>
+                  </div>
+                  <span class="text-gray-400">Emergency: 112</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-hospital-fill"></i>
+                  </div>
+                  <span class="text-gray-400">Medical: 103</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-police-car-fill"></i>
+                  </div>
+                  <span class="text-gray-400">Police: 102</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-gray-400">
+              <p>© 2025 Discover Tajikistan. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Price range slider
+        const priceRange = document.getElementById("priceRange");
+        const priceValue = document.getElementById("priceValue");
+
+        if (priceRange && priceValue) {
+          priceRange.addEventListener("input", function () {
+            priceValue.textContent = this.value;
+          });
+        }
+
+        // Category filter buttons
+        const categoryButtons = document.querySelectorAll(".category-filter");
+
+        categoryButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            categoryButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
